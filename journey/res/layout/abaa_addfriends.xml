@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/abaa_titlerelativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/abaa_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back" />
+
+         <ImageView
+             android:id="@+id/abaa_img_find"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+              android:src="@drawable/main_index_search_pressed" />
+
+             <LinearLayout
+                 android:layout_width="fill_parent"
+                 android:layout_height="50dp"
+                 android:layout_marginBottom="5dp"
+                 android:layout_marginLeft="70dp"
+                  android:layout_marginRight="70dp"
+                 android:layout_marginTop="5dp"
+                 android:layout_weight="30"
+                 android:background="@drawable/search_input"
+                 android:focusable="true"
+                 android:focusableInTouchMode="true"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal"
+                 android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_search" />
+
+            <EditText
+                android:id="@+id/first_et"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/abaa_txt_addfriends"
+                android:singleLine="true"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+       
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/abaa_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/abaa_titlerelativelayout" 
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0dip"  
+        android:listSelector="@android:color/transparent"   
+        android:layout_gravity="center_vertical"/>
+
+    
+
+</RelativeLayout>

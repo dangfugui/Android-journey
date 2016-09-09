@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#d9d6c3"
+   
+    
+    >
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="#FF8C00"
+            android:text="@string/s_myfriends"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/my_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/s_story"
+            android:textSize="18sp"
+         
+             >
+        </TextView>
+        <TextView
+            android:id="@+id/my_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/s_mydiary"
+            android:textSize="18sp" 
+            android:textColor="#FF8C00"
+            >
+        </TextView>
+    </LinearLayout>
+    
+    
+    
+    
+
+   <com.handmark.pulltorefresh.library.PullToRefreshListView
+       
+    
+    android:layout_margin="0dip"
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    android:scrollbars="none"
+    />
+   
+   
+
+
+</LinearLayout>

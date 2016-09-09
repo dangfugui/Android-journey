@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/aba_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_background"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/aba_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_back" />
+
+         <ImageView
+             android:id="@+id/aba_img_add"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/aaa_btn_add" />
+
+        <LinearLayout
+            android:id="@+id/Shoplist_shanghuleixing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/aba_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/aaa_txt_title"
+                android:textColor="#FF8C00"
+                android:textSize="18sp" />
+
+          
+        </LinearLayout>
+    </RelativeLayout>
+	
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="60dp" >
+
+         <ImageView
+             android:id="@+id/aba_img_friendsheard"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_alignParentLeft="true"
+             android:background="@drawable/input_normal"
+        	 android:src="@drawable/shop_photo_frame" />
+         
+		  <RelativeLayout
+		      android:layout_width="fill_parent"
+		      android:layout_height="60dp"
+		      android:layout_toRightOf="@+id/aba_img_friendsheard" >
+	         
+		        <TextView
+		             android:id="@+id/aba_txt_name"
+		             android:layout_width="wrap_content"
+		             android:layout_height="30dp"
+		             android:layout_alignParentTop="true"
+		             android:layout_alignParentLeft="true"
+		             android:text="name"
+		             android:textColor="#1fe22a"
+		             android:textSize="20dp" />
+        		 <TextView
+        		      android:id="@+id/aba_txt_title"
+		             android:layout_width="wrap_content"
+		             android:layout_height="30dp"
+		             android:layout_alignParentBottom="true"
+		             android:layout_alignParentLeft="true"
+		             android:textSize="20dp"
+		             android:textColor="#000000"
+		             android:text="title" />
+        		  <TextView
+        		     android:id="@+id/aba_txt_time"
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:layout_alignParentTop="true"
+		             android:layout_alignParentRight="true"
+		             android:text="time" />
+        		  <ImageView
+        		    android:layout_toLeftOf="@+id/aba_txt_distance"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="40dp"
+		            android:src="@drawable/loc" />
+        		 <TextView
+        		     android:id="@+id/aba_txt_distance"
+		             android:layout_width="wrap_content"
+		             android:layout_height="wrap_content"
+		             android:layout_alignParentBottom="true"
+		             android:layout_alignParentRight="true"
+		             android:text="km" />
+				      
+	        </RelativeLayout>
+     
+     </RelativeLayout>   
+    </LinearLayout>
+    
+     <HorizontalScrollView
+        android:id="@+id/aba_scro"
+        android:layout_below="@+id/aba_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="#AA444444"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/aba_liner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <ScrollView
+         android:layout_below="@+id/aba_scro"
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	   
+        >
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+         
+
+         <TextView
+			android:id="@+id/aba_txt_content"	
+            android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	          android:textColor="#000000"
+	           android:lineSpacingMultiplier="1.5"
+	        android:text="content" />
+         </LinearLayout>
+        
+    </ScrollView>
+      
+    
+
+</RelativeLayout>

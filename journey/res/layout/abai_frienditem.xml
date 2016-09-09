@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/abai_img_friendsheard"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         android:background="@drawable/input_normal"
+        android:src="@drawable/shop_photo_frame" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/abai_img_friendsheard"
+        android:layout_toRightOf="@+id/abai_img_friendsheard" >
+
+        <TextView
+            android:id="@+id/abai_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+           android:textColor="#1fe22a"
+		             android:textSize="20dp" /> 
+
+        <ImageView
+            android:id="@+id/aaai_dingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/loc" />
+
+        <TextView
+            android:id="@+id/abai_txt_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="km" />
+
+        <TextView
+            android:id="@+id/abai_txt_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/abai_txt_name"
+            android:text="introduce" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

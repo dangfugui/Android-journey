@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/aaai_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+         android:background="@drawable/input_normal"
+        android:src="@drawable/shop_photo_frame" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+         android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/aaai_image"
+        android:layout_toRightOf="@+id/aaai_image" >
+
+        <TextView
+            android:id="@+id/aaai_txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:singleLine="true"
+            android:text="title"
+            android:textSize="17sp"
+            android:textColor="#ff0000"
+             />
+
+        <ImageView
+            android:id="@+id/aaai_img_grade"
+            android:layout_width="50dip"
+            android:layout_height="10dip"
+            android:scaleType="fitStart"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/star0" />
+
+        <ImageView
+            android:id="@+id/aaai_dingwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/loc" />
+
+        <TextView
+            android:id="@+id/aaai_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="km" />
+
+        <TextView
+            android:id="@+id/aaai_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/aaai_img_grade"
+            android:layout_below="@+id/aaai_txt_title"
+            android:text="introduce"
+            android:maxLines="2"
+            android:ellipsize="end"
+             />
+
+    </RelativeLayout>
+
+</RelativeLayout>

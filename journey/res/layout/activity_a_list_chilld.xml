@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AAI_list_chilldActivity" >
+
+    <include
+        android:id="@+id/a_list_child_head"
+        android:layout_alignParentTop="true"
+        layout="@layout/head" />
+
+    <ScrollView
+        android:id="@+id/a_item_child_scr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/a_list_child_head"
+        android:scrollbars="none"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/a_item_child_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:scaleType="fitXY" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/a_item_child_Rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp" >
+
+                    <ImageView
+                        android:id="@+id/a_item_child_img_grade"
+                        android:layout_width="50dip"
+                        android:layout_height="10dip"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dip"
+                        android:scaleType="fitStart"
+                        android:src="@drawable/star0" />
+
+                    <ImageView
+                        android:id="@+id/a_item_child_img_dingwei"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="3dip"
+                        android:layout_below="@+id/a_item_child_img_grade"
+                        android:src="@drawable/loc" />
+					
+                    
+                    
+                    <TextView
+                        android:id="@+id/aai_locale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       
+                       android:layout_below="@+id/a_item_child_img_grade"
+                        android:layout_toRightOf="@id/a_item_child_img_dingwei"
+                        android:text="locale" />
+
+                    <TextView
+                        android:id="@+id/a_item_child_tex_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/a_item_child_img_dingwei"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:layout_marginTop="10dip"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="10dip"
+                        android:textColor="#000000"
+       					 android:lineSpacingMultiplier="1.5"
+                        android:text="introduce" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_below="@id/a_item_child_Rel" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

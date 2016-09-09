@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiang.lvyou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aa_travel"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xiang.lvyou.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xiang.lvyou.AA_SearchActivity" >
+        </activity>
+        <activity
+            android:name="com.xiang.lvyou.CeshiActivity"
+            android:label="@string/title_activity_ceshi" >
+        </activity>
+        <activity android:name="com.xiang.lvyou.AC_CheckinActivity" >
+        </activity>
+        <activity android:name="com.xiang.lvyou.AD_MyActivity" >
+        </activity>
+        <activity android:name="com.xiang.lvyou.AB_FriendsActivity" >
+        </activity>
+
+        <activity
+            android:name="com.dang.view.AA_RecommendActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+    
+        <activity
+            android:name="com.dang.view.ABB_DiaryListActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.dang.view.ADA_LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.dang.view.ADB_RegistrationActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity android:name="com.dang.view.ABA_MyFriendsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+       	<activity android:name="com.dang.view.ABI_DiaryItem" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name="com.xiang.lvyou.AAI_list_chilldActivity"
+            android:label="@string/title_activity_a_list_chilld" >
+        </activity>
+        <activity
+            android:name="com.xiang.lvyou.SpaceActivity"
+            android:label="@string/title_activity_space" >
+        </activity>
+        <activity android:name="com.xiang.lvyou.login.ADA_LoginActivity"></activity>
+        <activity android:name="com.xiang.lvyou.login.ADB_RegistetActivity"></activity>
+        <activity android:name="com.xiang.lvyou.login.ADC_UserSetActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+   
+    	<activity android:name="com.dang.view.ABAA_AddFriendsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+    	  <activity android:name="com.xiang.lvyou.ABCA_PhotoUtilsActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="abca_addarticle" >Add Article</string>
+	<string name="abca_content" >content</string>
+   	<string name="abca_headline" >headline</string>
+    <string name="abca_upload">upload</string>
+	 <string name="back">back</string>
+    <string name="app_name">journey</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_ceshi">CeshiActivity</string>
+    <string name="first">finding</string>
+    <string name="second">friends</string>
+    <string name="third">there</string>
+    <string name="fourth">mine</string>
+    <string name="first_position">jiangsu</string>
+    <string name="first_searching">search you want</string>
+    <string name="first_outing">outing</string>
+    <string name="first_food">food</string>
+    <string name="first_more">more</string>
+    <string name="s_myfriends">friends</string>
+    <string name="s_story">our story</string>
+    <string name="s_mydiary">diary</string>
+    <string name="f_register">register</string>
+    <string name="f_mine">mine</string>
+    <string name="f_login">login</string>
+    <string name="aa_scenery">scenery</string>
+     <string name="abaa_txt_addfriends">AddFriends</string>
+    <string name="ad_please_login">please login</string>
+    <string name="ad_sign_in">sign in</string>
+    <string name="ad_add">add</string>
+    <string name="ad_set">set</string>
+    <string name="ad_log_out">log out</string>
+    <string name="ad_version_updating">version updating</string>
+    <string name="ad_feedback">feedback</string>
+    <string name="ad_about">about</string>
+    <string name="aaa_txt_title">title</string>
+    <string name="ada_login">login</string>
+    <string name="ada_account">login name</string>
+    <string name="ada_password">password</string>
+    <string name="ada_forget_the_password">forget the password</string>
+    <string name="ada_register_an_account">Register an account</string>
+    <string name="adb_email_address">Please enter your email address</string>
+    <string name="adb_login_name">Please enter you login name</string>
+    <string name="adb_password">Please enter the login password</string>
+    <string name="adb_password2">Please repeat login password</string>
+    <string name="adb_register">register</string>
+
+    <style name="myProgressBarStyleLarge">
+
+
+　　                <item name="android:indeterminateDrawable">@drawable/progress_bg</item>
+        <item name="android:minWidth">32dip</item>
+
+
+　　                <item name="android:maxWidth">32dip</item>
+
+
+　　                <item name="android:minHeight">32dip</item>
+
+
+　　                <item name="android:maxHeight">32dip</item>
+    </style>
+
+    <string name="title_activity_a_list_chilld">A_list_chilldActivity</string>
+    <string name="title_activity_space">SpaceActivity</string>
+
+</resources>
