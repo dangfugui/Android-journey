@@ -129,6 +129,7 @@ public class ADA_LoginActivity extends Activity {
 				Toast.makeText(ADA_LoginActivity.this, "服务器无响应", 1).show();
 			} else if (msg.what == 200) {
 				String result = (String) msg.obj;
+				if(result==null) return;
 				Log.e("qiangpengyu", result);
 				if (result.equalsIgnoreCase("NOUSER")) {
 					mLogin_user.setText("");

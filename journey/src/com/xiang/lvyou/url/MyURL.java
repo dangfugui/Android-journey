@@ -27,9 +27,9 @@ import android.widget.Toast;
 
 public class MyURL {
 	//public static String localhost="http://10.0.3.2:80/";
-	public static String localhost="http://1.myjourney.sinaapp.com/";
-	public static String imagePath="recommend/image/";
-	public static String index="recommend/首页/index.html";
+	public static String localhost="http://qihe.party/phproot/";
+	public static String imagePath="journey/image/";
+	public static String index="journey/首页/index.html";
 	
 	public MyURL() {
 		// TODO 自动生成的构造函数存根
@@ -43,8 +43,8 @@ public class MyURL {
 	 * @return url
 	 */
 	public String getScenics(String title){
-		//return "http://10.0.3.2:80/recommend/Service/getScenics.php?start=1&end=5";
-		return localhost+"recommend/Service/getMessage.php?type="+title;
+		//return "http://10.0.3.2:80/journey/Service/getScenics.php?start=1&end=5";
+		return localhost+"journey/Service/getMessage.php?type="+title;
 	}
 	
 	/**
@@ -53,8 +53,8 @@ public class MyURL {
 	 * @return 获取好友列表url
 	 */
 	public String getFriends(){
-		//http://localhost/recommend/Service/getFriends.php?userid=2
-		return localhost+"recommend/Service/getFriends.php?userid="+Data.USER.userid;
+		//http://localhost/journey/Service/getFriends.php?userid=2
+		return localhost+"journey/Service/getFriends.php?userid="+Data.USER.userid;
 	}
 	/**
 	 * 获取某好友日志url
@@ -62,8 +62,8 @@ public class MyURL {
 	 * @return 获取某好友日志url
 	 */
 	public String getArticles(String userid){
-		//http://localhost/recommend/Service/getArticles.php?userid=2
-		return localhost+"recommend/Service/getArticles.php?userid="+userid;
+		//http://localhost/journey/Service/getArticles.php?userid=2
+		return localhost+"journey/Service/getArticles.php?userid="+userid;
 	}
 	/**
 	 * 获取我的日志
@@ -71,7 +71,7 @@ public class MyURL {
 	 */
 	public String getmyArticles() {
 		// TODO 自动生成的方法存根
-		return localhost+"recommend/Service/getArticles.php?userid="+Data.USER.userid;
+		return localhost+"journey/Service/getArticles.php?userid="+Data.USER.userid;
 	}
 	
 	/******************************************************
@@ -80,7 +80,7 @@ public class MyURL {
 	 */
 	public String getFriendsArticles() {
 		// TODO 自动生成的方法存根
-		return localhost+"recommend/Service/getAllArticles.php?userid="+Data.USER.userid;
+		return localhost+"journey/Service/getAllArticles.php?userid="+Data.USER.userid;
 	}
 	
 	/**
@@ -108,7 +108,7 @@ public class MyURL {
 	 */
 	public String getAddFriends() {
 		// TODO 自动生成的方法存根
-		return localhost+"recommend/Service/getAllUsers.php";
+		return localhost+"journey/Service/getAllUsers.php";
 	}
 	/**
 	 * 添加好友
@@ -117,7 +117,7 @@ public class MyURL {
 	 */
 	public String addFriend(String id) {
 		// TODO 自动生成的方法存根
-		return localhost+"recommend/Service/addFriend.php?userid="+Data.USER.userid+"&friendid="+id;
+		return localhost+"journey/Service/addFriend.php?userid="+Data.USER.userid+"&friendid="+id;
 	}
 	
  
@@ -134,7 +134,7 @@ public class MyURL {
         String boundary = "*****";
         try
         {
-        	java.net.URL url = new java.net.URL(localhost+"recommend/Service/upload.php");
+        	java.net.URL url = new java.net.URL(localhost+"journey/Service/upload.php");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
           /* Output to the connection. Default is false,
              set to true because post method must write something to the connection */
@@ -211,7 +211,7 @@ public class MyURL {
 			image+=imagePath+Data.USER.username+"-a-"+files.get(files.size()-1).getName();
 			Toast.makeText(context, image, 1).show();
 		}
-		return localhost+"recommend/Service/addArticle.php?userid=+"+Data.USER.userid+
+		return localhost+"journey/Service/addArticle.php?userid=+"+Data.USER.userid+
 				"&articlemode=2&contents="+contents+"&image="+image+"&header="+header;
 	}
 	

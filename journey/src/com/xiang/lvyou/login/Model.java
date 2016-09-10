@@ -8,7 +8,7 @@ public class Model {
 
 //	public static String HTTPURL = "http://10.0.3.2:9096/recommend/Service/";
 	
-	public static  String HTTPURL=MyURL.localhost+"recommend/Service/";
+	public static  String HTTPURL=MyURL.localhost+"journey/Service/";
 	public static String REGISTET = "registerProcess.php";
 	public static String LOGIN = "loginProcess.php";
 	public static String upDataUser="updateUser.php";
